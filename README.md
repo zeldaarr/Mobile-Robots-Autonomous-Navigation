@@ -1,31 +1,20 @@
-# Mobile Robots Autonomous Navigation
+# Navigasi Otonom Robot Mobile
 
-Implemented Dubins Curves and RRT(Rapidly Exploring Random Trees) along with the Optimal RRT version.
+## Gambaran Umum
 
-Simulated an environment with obstacles with a Pioneer P3DX robot in Gazebo using ROS and applied these path planning algorithms.
+Proyek ini berfokus pada pengembangan algoritma navigasi otonom untuk robot mobile. Dengan memanfaatkan kombinasi **input sensor**, **perencanaan jalur**, dan **mekanisme kontrol**, robot dalam proyek ini mampu menavigasi lingkungan yang kompleks tanpa campur tangan manusia. Proyek ini juga mengintegrasikan **ROS (Robot Operating System)** dan **SLAM (Simultaneous Localization and Mapping)** serta beberapa strategi navigasi lainnya.
 
-Refer the Project Report for more information.
+Repositori ini berisi implementasi dalam **Python** dan **C++**, yang dirancang untuk digunakan dalam kerangka robotik seperti ROS, sehingga cocok untuk aplikasi robotik dunia nyata.
 
-# Visuals
+## Fitur
+- **Navigasi Otonom**: Robot mobile mampu bernavigasi di lingkungan yang sudah ditentukan atau dinamis menggunakan data sensor.
+- **Deteksi Halangan**: Mengimplementasikan teknik fusi sensor untuk mendeteksi rintangan secara real-time.
+- **Perencanaan Jalur**: Menggunakan algoritma seperti A*, Dijkstra, dan RRT (Rapidly-exploring Random Trees) untuk perencanaan jalur yang efisien.
+- **Lokalisasi & Pemetaan**: Menggunakan teknik SLAM untuk memetakan lingkungan dan menentukan posisi robot.
+- **Integrasi dengan ROS**: Dirancang untuk beroperasi dalam kerangka ROS dengan memanfaatkan node standar ROS untuk komunikasi.
 
+## Instalasi & Setup
 
-<figure>
-<img src="rrt_star_dubins/Figure2.png" width=280 height=200 />
-<figcaption>RRT Star + Dubins (Sub-Optimal) with minimized Euclidean distance between nodes, 
-</figcaption>
-</figure>
-
-<figure>
-<img src="rrt_star_dubins/rrt_star_with_random_samplings.png" width=280 height=200 />
-<figcaption> RRT Star + Dubins with random samples, 
-</figcaption>
-</figure>
-
-<figure>
-<img src="rrt_star_dubins/rrtstar_minimized_dubins_paths2.png" width=280 height=200 />
-<figcaption> RRT Star + Dubins (Optimal) with minimized Dubins Paths between nodes, 
-</figcaption>
-</figure>
-
-
-<br/>
+1. Clone repositori ini:
+   ```bash
+   git clone https://github.com/srnand/Mobile-Robots-Autonomous-Navigation.git
